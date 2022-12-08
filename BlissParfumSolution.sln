@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlissParfumSolution.Domain", "BlissParfumSolution.Domain\BlissParfumSolution.Domain.csproj", "{E51E3FD6-16E5-40F5-AAB0-291613819A2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlissParfum.Domain", "BlissParfum.Domain", "{D4D97BC7-EE75-49D4-88DE-C40F813F74D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlissParfumSolution.Infra.Data", "BlissParfumSolution.Infra.Data\BlissParfumSolution.Infra.Data.csproj", "{6B26FF08-89EF-45F6-A766-A5FE1DA01436}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C} = {E51E3FD6-16E5-40F5-AAB0-291613819A2C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlissParfum.Infra.Data", "BlissParfum.Infra.Data", "{3679A316-0B83-4B58-9AF7-872B91C65ED8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlissParfumSolution.WebAPI", "BlissParfumSolution.WebAPI\BlissParfumSolution.WebAPI.csproj", "{3A281AD4-B71A-44D4-969E-C898F579F03D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B26FF08-89EF-45F6-A766-A5FE1DA01436} = {6B26FF08-89EF-45F6-A766-A5FE1DA01436}
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C} = {E51E3FD6-16E5-40F5-AAB0-291613819A2C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlissParfum.WebAPI", "BlissParfum.WebAPI", "{AC7ED177-4497-4602-A0CF-24F4B0E62E43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlissParfumSolution.Tests", "BlissParfumSolution.Tests\BlissParfumSolution.Tests.csproj", "{71892158-6FA8-42DD-B924-7C842ADA9BC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C} = {E51E3FD6-16E5-40F5-AAB0-291613819A2C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlissParfum.Tests", "BlissParfum.Tests", "{B8191A66-A0D1-4639-B78E-BD6DAF24FAD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC5CF44C-FFEB-4D72-8F8E-7DB0B1AB6F6D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B26FF08-89EF-45F6-A766-A5FE1DA01436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B26FF08-89EF-45F6-A766-A5FE1DA01436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B26FF08-89EF-45F6-A766-A5FE1DA01436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B26FF08-89EF-45F6-A766-A5FE1DA01436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A281AD4-B71A-44D4-969E-C898F579F03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A281AD4-B71A-44D4-969E-C898F579F03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A281AD4-B71A-44D4-969E-C898F579F03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A281AD4-B71A-44D4-969E-C898F579F03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71892158-6FA8-42DD-B924-7C842ADA9BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71892158-6FA8-42DD-B924-7C842ADA9BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71892158-6FA8-42DD-B924-7C842ADA9BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71892158-6FA8-42DD-B924-7C842ADA9BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E51E3FD6-16E5-40F5-AAB0-291613819A2C} = {D4D97BC7-EE75-49D4-88DE-C40F813F74D1}
+		{6B26FF08-89EF-45F6-A766-A5FE1DA01436} = {3679A316-0B83-4B58-9AF7-872B91C65ED8}
+		{3A281AD4-B71A-44D4-969E-C898F579F03D} = {AC7ED177-4497-4602-A0CF-24F4B0E62E43}
+		{71892158-6FA8-42DD-B924-7C842ADA9BC2} = {B8191A66-A0D1-4639-B78E-BD6DAF24FAD2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60B09491-62AE-4838-9DCE-F5C256081660}
+	EndGlobalSection
+EndGlobal
